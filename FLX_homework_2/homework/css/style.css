@@ -1,0 +1,127 @@
+.flex-2-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+li.box-bg h2:hover {
+	background-color: #87CEFA;
+	color: white;
+	font-weight: bold;
+}
+p::first-letter {
+	color: #87CEFA;
+	font-size: 30px;
+}
+.tm-content-box, .tm-sidebar, .blocks {
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+.blocks .tm-content-box {
+    box-shadow: none;
+}
+.tm-banner {
+    padding: 0;
+    margin: 35px;
+}
+section {
+    position: relative;
+}
+section::after {
+    content:''; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0; 
+    top: 0;
+    border-style: solid;
+    border-width: 28px 235px 0 0;
+    border-color: #87CEFA transparent;
+}
+#ideas h2:first-of-type {
+	color: gainsboro;
+	letter-spacing: 5px;
+}
+h2 + p {
+	font-style: italic;
+}
+section p {
+	line-height: 30px;
+	text-indent: 25px;
+}
+.padding-medium a:visited {
+	text-decoration: underline;
+}
+.padding-medium a:hover {
+	color: blue;
+	text-decoration-line: underline;
+	text-decoration-style: double; 
+}
+a.text::after {
+	content: 'New';
+	vertical-align: top;
+	font-size: 10px;
+	color: red;
+	display: inline-block;
+}
+.blocks .box:nth-child(even) {
+	background-color: #DCDCDC;
+}
+.blocks .box p::first-letter {
+	color: #000000;
+}
+.box-work {
+	padding: 5px;
+}
+.blocks .box p {
+    text-indent: 0;
+}
+.mandatory-field::after {
+	content: "*";
+	color: red;
+	font-weight: bold;
+}
+.contact-form {
+	text-align: right;
+}
+button.submit-btn {
+	border-radius: 0;
+	background-color: #ffffff;
+	color: #87CEFA;
+	border: 1px solid #87CEFA;
+	padding: 10px 45px;
+}
+button.submit-btn:hover {
+	background-color: #87CEFA;
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+.tm-nav-item:hover {
+	background: #D8D8D8;
+}
+@media print {
+    div.tm-sidebar, div.flex-2-col + div, section.heading, section.blocks, section.blocks + section, section.tm-content-box {
+        display: none;
+    }
+    .tm-banner {
+        border: 2px solid grey;
+    }
+    .flex-2-col h2 {
+        color: #33007a;
+        font-size: 40px;
+    }
+    .padding-medium {
+        padding-top: 0;
+        padding-bottom: 0;
+    }  
+    .flex-item:first-of-type {
+        flex-grow: 1;
+        max-width: none;
+    }
+    .flex-item:last-of-type {
+        flex-shrink: 0;
+        width: 33%;   
+    }
+    section::after {
+        display: none;
+    }
+}
