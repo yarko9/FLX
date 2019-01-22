@@ -85,8 +85,8 @@ a.text::after {
 }
 button.submit-btn {
 	border-radius: 0;
-	background-color: #ffffff;
 	color: #87CEFA;
+	background-color: #ffffff;
 	border: 1px solid #87CEFA;
 	padding: 10px 45px;
 }
