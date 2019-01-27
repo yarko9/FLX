@@ -1,0 +1,173 @@
+// Write your styles here
+body {
+	font: $fonts;
+	margin: 0;
+	footer {
+		color: $maintext-clr;
+	}
+}
+header {
+	position: relative;
+	margin: 0;
+	background: $headerBgr no-repeat top/cover;
+	height: 100vh;
+	.top-wrapper {
+		display: flex;
+		justify-content: space-between;
+		nav {
+			right: 0;
+			position: absolute;
+			padding-top: 15px;
+			width: 60%;
+			display: flex;
+			justify-content: space-around;
+			a {
+				color: $header-main-clr;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: bold;
+				&:hover {
+					color: darken($header-main-clr, 15%);
+				}
+			}
+		}
+		.logo img {
+			position: absolute;
+			width: 200px;
+		}
+	}
+	section {
+		height: 100vh;
+		display: flex;
+   		flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    text-transform: uppercase;
+	    color: $header-main-clr;
+	    a {
+	    	text-decoration: none;
+	    	color: #FFFFFF;
+	    	padding: 15px 60px;
+	    	background-color: $main-clr;
+	    	border: 1px solid $main-clr;
+	    	&:hover {
+				background-color: lighten($main-clr, 10%);
+				border: 1px solid lighten($main-clr, 10%);
+			}
+	    }
+	}
+}
+main {
+	max-width: 1100px;
+	margin: auto;
+	.btn {
+		align-self: flex-end;
+		margin: 10px 0;
+		font-size: 17px;
+		width: 200px;
+		height: 40px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		background-color: $main-clr;
+		border: 1px solid $main-clr;
+		&:hover {
+			background-color: lighten($main-clr, 15%);
+			border: 1px solid lighten($main-clr, 10%);
+		}
+	}
+	h1 {
+		text-align: right;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		&+p {
+			margin-top: 0;
+		}
+	}
+	h1,h2,h3,h4,p {
+		color: $maintext-clr;
+	}
+	input, textarea {
+		border: 1px solid $border-clr;
+	}
+	.toolbar {
+		padding-top: 15px;
+		text-align: right;
+		input {
+			font-size: 15px;
+			width: 170px;
+			height: 32px;
+			text-align: left;
+			padding: 1px 15px;
+		}
+	}
+	.post-list {
+		article {
+			display: flex;
+			margin: 15px 0;
+			background-color: $article-bgr;
+			div {
+				display: flex;
+				flex-direction: column;
+				padding: 0 5px;
+				.post-description {
+					color: $post-dcr-clr;
+					margin-bottom: 8px;
+					font-size: 12px;
+				}
+				p {
+					margin-top: 0;
+				}
+				h3 {
+					border-top: 1px solid $border-clr;
+					margin: 0;
+					padding-top: 10px;
+					color: $main2-clr;
+				}
+			}
+		}
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		img {
+			width: 100%;
+		}
+	}
+	.contact-form {
+		text-align: right;
+		h4 {
+			margin: 0 0 10px 0;
+			text-transform: uppercase;
+		}
+		.form {
+			margin: 15px 0;
+			text-align: right;
+			color: $main2-clr;
+			.textarea-field {
+				display: flex;
+				flex-direction: column;
+				margin: 10px 0;
+			}
+			input {
+				height: 40px;
+			}
+			.form-input {
+				display: flex;
+				justify-content: space-around;
+				.form-group {
+					display: flex;
+					flex-direction: column;
+					width: 50%;
+				}
+				.form-1-field {
+					margin-right: 9px;
+				}
+				.form-2-field 
+					input {
+					margin-left: 9px;
+				}
+			}
+		}
+	}
+}
+

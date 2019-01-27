@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,gBAAiB;EAChB,gBAAgB,ECFR,GAAG",
+"sources": ["_main.scss","_variables2.scss"],
+"names": [],
+"file": "style2.css"
+}
