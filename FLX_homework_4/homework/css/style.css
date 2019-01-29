@@ -1,0 +1,237 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+	margin: 0;
+}
+* {
+	font-family: 'Open Sans';
+}
+article, p, .copyright, .footer-nav a {
+	font-size: 13px;
+}
+.btn {
+	color: white;
+	background-color: #097774;
+	border: 1px solid transparent;
+	font-weight: bold;
+}
+.btn:hover {
+	background-color: #0dc1bc;
+	border: 1px solid transparent;
+}
+.btn-subs {
+	padding: 2px 8px;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header {
+	background: url('../img/sample2.jpg') no-repeat top/cover;
+	width: 100%;
+	color: white;
+	background-position: center;
+}
+header nav {
+	display: flex;
+	justify-content: space-around;
+}
+a {
+	margin: 10px;
+	text-decoration: none;
+}
+header a {
+	color: white;
+	margin: 20px;
+}
+a:hover {
+	color: #0dc1bc;
+}
+.header-top {
+	display: flex;
+	justify-content: space-between;
+}
+.header-top .regist{
+	margin-top: 20px;
+}
+.header-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 150px;
+}
+.header-main h1 {
+	letter-spacing: 9px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.header-main span {
+	font-size: 60px;
+}
+.header-main h1, .header-main h4 {
+	margin: 5px;
+}
+.header-bottom {
+	padding-bottom: 100px;
+}
+.header-bottom a {
+	width: 170px;
+	border: 1px solid white;
+	text-align: center;
+	padding: 15px 10px;
+	margin-bottom: 30px;
+	background-color: rgba(0,0,0,0.6)	
+}
+.section-about {
+	position: relative;
+}
+.section-about::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	right: 0;
+	top: 0;
+	border-style: solid;
+	border-width: 0 100vw 200px 0;
+	border-color: transparent #000000 transparent transparent;
+}
+.about {
+	display: inline-flex;
+	padding-right: 0;
+	height: 150px;
+}
+.about div {
+	width: 50%;
+	z-index: 100;
+}
+.white {
+	display: flex;
+	align-items: flex-end;
+}
+.black p {
+	color: white;
+}
+.about div p {
+	margin: 0;
+	font-size: 12px;
+}
+.articles-content {
+	display: inline-flex;
+	justify-content: space-between;
+	height: 250px;
+}
+.articles-content > div {
+	width: 50%;
+}
+.articles {
+	padding: 20px 0;
+}
+.articles-img {
+	position: relative;
+	color: #FFFFFF;
+	background: url('../img/sample.jpg') no-repeat top/cover;
+}
+.likes {
+	position: absolute;
+	margin: 10px;
+	padding: 5px;
+	right: 0;
+	top: 0;
+	text-align: right;
+	border: 1px solid #ffffff;
+	background-color: rgba(0,0,0,.5);
+	overflow: hidden;
+}
+.date {
+	position: absolute;
+	margin: 10px;
+	padding: 5px;
+	bottom: 0;
+	left: 0;
+}
+.articles-block div {
+	margin: 1% 10px; 
+	text-align: center;
+}
+.articles-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.articles-heading {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 0;
+}
+.showmore {
+	display: flex;
+	justify-content: space-around;
+}
+.moreinfo {
+	margin: 40px 0;
+	padding: 15px;
+	width: 200px;
+	box-shadow: 0px 3px 8px rgb(100,100,100);
+}
+.moreinfo button {
+	width: 100%;	
+}
+.section-subscribe, .section-articles, .section-about {
+	background-color: #f3f3f3;
+}
+.subscribe {
+	padding: 20px 0;
+}
+.subscribe-form {
+	display: flex;
+	justify-content: flex-end;
+}
+.contact {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+}
+.contact div:last-of-type {
+	margin: 15px 50px 15px 160px;
+}
+input[type="email"]{
+	width: 125px;
+	margin-right: 10px;
+	border: 1px solid #000000;
+	padding-left: 5px;
+}
+input::placeholder {
+	color: black;
+}
+.contact-us {
+	margin: 15px;
+}
+.contact-us p {
+	color: #9E9E9E;
+}
+.contact-us form {
+	display: flex;
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 7px 0;
+	border-top: 1px solid #f3f3f3;
+}
+.footer-nav a {
+	color: #000000;
+}
+.footer-nav a:hover {
+	color: #0dc1bc;
+}
+.copyright {
+	color: #9e9e9e;
+}
