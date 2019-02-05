@@ -2,8 +2,7 @@ let x1, x2, d, x, a, b, c;
 a = parseFloat(prompt('Enter A value:'));
 b = parseFloat(prompt('Enter B value:'));
 c = parseFloat(prompt('Enter C value:'));
-
-if( isNaN(a)|| isNaN(b) || isNaN(c) || a===0) {
+if(a===0 || isNaN(a)|| isNaN(b) || isNaN(c)) {
 	alert('Invalid input data');
 } else {
 	d = (Math.pow(b,2)) - 4 * a * c;
