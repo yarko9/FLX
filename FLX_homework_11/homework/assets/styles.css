@@ -1,0 +1,75 @@
+*{
+	outline: none;
+}
+.main-wrapper {
+	height: 100%;
+}
+.container {
+	max-width: 960px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.table {
+	max-width: 600px;
+	margin: 15px auto;
+	border: 1px solid grey;
+	margin-right: auto;
+	margin-left: auto;
+}
+.table_content {
+	padding: 5px 20px;
+	height: 640px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.table-heading {
+	font-size: 22px;
+	margin: 10px;
+}
+.table-form {
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	display: flex;
+	align-items: stretch;
+}
+.add-box {
+	padding: 0;
+}
+.input-area {
+	height: 20px;
+	width: 100%;
+	margin: 0 10px;
+	border: 1px solid black;
+}
+.decoration-border {
+	margin: 20px 0;
+	border: 1px solid black;
+}
+.table-main {
+	height: 100%;
+	width: 100%;
+}
+.list-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+}
+.list-item-text {
+	margin: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	cursor: move;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+.cat-logo {
+	width: 80px;
+}
