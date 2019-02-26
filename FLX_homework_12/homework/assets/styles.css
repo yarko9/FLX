@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+* {
+	overflow: hidden;
+	outline: none;
+}
+body {
+	margin: 0;
+	font-family: 'M PLUS Rounded 1c', sans-serif;	
+}
+.main-wrapper {
+	max-width: 900px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.heading {
+	font-size: 30px;
+	margin: 0;
+}
+.input-area {
+	height: 25px;
+	width: 300px;
+	margin: 18px 0;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px solid #004743;
+	padding: 0 5px;	
+	font-family: 'Varela Round', sans-serif;
+}
+.btn {
+	background-color: #004743;
+	color: #fff; 
+	border: 1px solid transparent;
+	width: 150px;
+	font-family: 'Varela Round', sans-serif;
+	padding: 5px;
+	height: 30px;
+}
+.btn:hover {
+	background-color: #00877f;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+}
+.btns {
+	width: 100%;
+}
+.list-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.list-item-text {
+	margin: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.btn-delete {
+	background: url(img/remove-s.jpg) no-repeat;
+	background-position: center;
+	width: 35px;
+	height: 35px;
+}
+.btn-done {
+	background: url(img/todo-s.png) no-repeat;
+	background-position: center;
+	width: 35px;
+	height: 35px;
+}
