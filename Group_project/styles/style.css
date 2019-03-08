@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e8edf0;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-phone,
+.yellow-phone,
+.green-phone,
+.pink-phone {
+    height: 43%;
+    width: 35%;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 15;
+}
+
+.blue-phone {
+    top: 11%;
+    left: 19%;
+}
+
+.yellow-phone {
+    top: 13%;
+    left: 47%;
+}
+
+.pink-phone {
+    top: 42%;
+    left: 17%;
+}
+
+.green-phone {
+    top: 44%;
+    left: 46%;
+}
+
+.shadow-blue,
+.shadow-yellow,
+.shadow-pink,
+.shadow-green {
+    height: 55%;
+    width: 40%;
+    position: absolute;
+    transition: 0.2s;
+    z-index: 7;
+}
+
+.shadow-blue {
+    top: 9%;
+    left: 16%;
+}
+
+.shadow-yellow {
+    top: 10%;
+    left: 45%;
+}
+
+.shadow-pink {
+    top: 39%;
+    left: 13%;
+}
+
+.shadow-green {
+    top: 41%;
+    left: 44%;
+}
+
+.blue-phone .phone-image,
+.yellow-phone .phone-image,
+.green-phone .phone-image,
+.pink-phone .phone-image,
+.shadow-blue .shadow-image,
+.shadow-yellow .shadow-image,
+.shadow-pink .shadow-image,
+.shadow-green .shadow-image {
+    height: 100%;
+    width: 100%;
+}
+
+.hover-on-blue:hover + .blue-phone{
+    left: 22%;
+    top: 7%;
+    z-index: 17;
+}
+
+.hover-on-yellow:hover + .yellow-phone{
+    left: 50%;
+    top: 9%;
+    z-index: 17;
+}
+
+.hover-on-green:hover + .green-phone{
+    left: 49%;
+    top: 40%;
+    z-index: 17;
+}
+
+.hover-on-pink:hover + .pink-phone{
+    left: 20%;
+    top: 38%;
+    z-index: 17;
+}
+
+.hover-on-blue:hover ~ .shadow-blue,
+.hover-on-yellow:hover ~ .shadow-yellow,
+.hover-on-green:hover ~ .shadow-green,
+.hover-on-pink:hover ~ .shadow-pink {
+    height: 55%;
+    width: 45%;
+}
+
+.hover-on-green:hover ~ .shadow-green {
+    z-index: 16;
+    left: 43%;
+    top: 45%;
+}
+
+.hover-on-blue:hover ~ .shadow-blue {
+    z-index: 16;
+    left: 16%;
+    top: 14%;
+}
+
+.hover-on-yellow:hover ~ .shadow-yellow {
+    z-index: 16;
+    left: 44%;
+    top: 14%;
+}
+
+.hover-on-pink:hover ~ .shadow-pink {
+    z-index: 16;
+    left: 14%;
+    top: 43%;
+}
+
+
+.hover-on-blue{
+    width:27%;
+    height: 34%;
+    transform: rotate(58deg) skewY(-29deg);
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    z-index: 19;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.hover-on-blue:hover{
+    top: 11%;
+    left: 26%;
+    z-index: 20;
+}
+.hover-on-yellow{
+    width:27%;
+    height: 34%;
+    transform: rotate(58deg) skewY(-29deg);
+    position: absolute;
+    top: 18%;
+    left: 51%;
+    z-index: 19;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.hover-on-yellow:hover{
+    top: 14%;
+    left: 54%;
+    z-index: 20;
+}
+.hover-on-pink{
+    width:27%;
+    height: 34%;
+    transform: rotate(58deg) skewY(-29deg);
+    position: absolute;
+    top: 47%;
+    left: 21%;
+    z-index: 19;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.hover-on-pink:hover{
+    top: 43%;
+    left: 24%;
+    z-index: 20;
+}
+.hover-on-green{
+    width:27%;
+    height: 34%;
+    transform: rotate(58deg) skewY(-29deg);
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    z-index: 19;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.hover-on-green:hover{
+    top: 45%;
+    left: 52%;
+    z-index: 20;
+}
